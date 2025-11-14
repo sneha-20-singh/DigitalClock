@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="clock.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="firstblock">
+        <div id="day"></div>
+      </div>
+      <div class="menu">
+        <div id="menu-btn">
+          <i class="fa-solid fa-ellipsis-vertical" style="color: #00bf8f"></i>
+        </div>
+        <ul class="option">
+          <li id="format12">12-Hour Format</li>
+          <li id="format24">24 Hour Format</li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="child" id="hour">
+          00 <br /><span class="spanname">hour</span>
+        </div>
+        <div class="child" id="minute">
+          00 <br /><span class="spanname">minutes</span>
+        </div>
+        <div class="child" id="second">
+          00 <br /><span class="spanname">seconds</span>
+        </div>
+        <div id="midday" class="child"></div>
+      </div>
+    </div>
+    <script src="clock.js"></script>
+  </body>
+</html>
