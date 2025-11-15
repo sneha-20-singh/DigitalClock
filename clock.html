@@ -14,29 +14,31 @@
     />
   </head>
   <body>
+    <input type="file" id="bg-input" accept="image/*" style="display: none" />
+    <div class="btn-wrapper">
+      <button id="bg-btn">Change Background</button>
+      <button id="reset-bg-btn">Reset Background</button>
+    </div>
+
     <div class="container">
-      <div class="firstblock">
+      <div class="div-wrapper">
         <div id="day"></div>
-      </div>
-      <div class="menu">
-        <div id="menu-btn">
-          <i class="fa-solid fa-ellipsis-vertical" style="color: #00bf8f"></i>
+        <div id="date"></div>
+
+        <div class="menu">
+          <div id="menu-btn">
+            <i class="fa-solid fa-ellipsis-vertical" style="color: #fff"></i>
+          </div>
+          <ul class="option">
+            <li id="format12">12-Hour Format</li>
+            <li id="format24">24 Hour Format</li>
+          </ul>
         </div>
-        <ul class="option">
-          <li id="format12">12-Hour Format</li>
-          <li id="format24">24 Hour Format</li>
-        </ul>
       </div>
       <div class="main">
-        <div class="child" id="hour">
-          00 <br /><span class="spanname">hour</span>
-        </div>
-        <div class="child" id="minute">
-          00 <br /><span class="spanname">minutes</span>
-        </div>
-        <div class="child" id="second">
-          00 <br /><span class="spanname">seconds</span>
-        </div>
+        <div class="child" id="hour">00</div>
+        <div class="child" id="minute">00</div>
+        <div class="child" id="second">00</div>
         <div id="midday" class="child"></div>
       </div>
     </div>
